@@ -11,12 +11,6 @@ import { Button } from '@/app/ui/button';
 import { useActionState } from 'react';
 import { authenticate } from '@/app/lib/actions';
 
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-    title: 'Login | Acme Dashboard',
-};
-
 
 export default function LoginForm() {
     const [errorMessage, formAction, isPending] = useActionState(
