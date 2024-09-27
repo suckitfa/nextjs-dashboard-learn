@@ -1,13 +1,13 @@
 import { Metadata } from 'next';
-
+import CustomersTable from '@/app/ui/customers/table'
 export const metadata: Metadata = {
     title: 'Customers | Acme Dashboard',
 };
 
-export default function () {
+export default function Customers() {
     return (
         <>
-            <h1>Customers pages</h1>
+            <CustomersTable customers={[]} />
         </>
     )
 }
